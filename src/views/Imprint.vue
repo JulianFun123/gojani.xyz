@@ -10,7 +10,7 @@
         </p><br>
         <h2>Kontakt</h2>
         <p>
-        E-Mail: julian@gojani.com<br>
+        E-Mail: julian@gojani.xyz<br>
         </p>
     </div>
   </div>

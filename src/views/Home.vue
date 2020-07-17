@@ -9,15 +9,15 @@
         <h1 class="page-titles">What I've done</h1>
 
         <div class="references">
-            <a id="pastefy" href="https://pastefy.ga">
+            <router-link id="pastefy" to="/project/pastefy">
                 <h3>Pastefy.ga</h3>
                 <h5>A code paster</h5>
-            </a>
+            </router-link>
 
-            <a id="punyshort" href="https://punyshort.ga">
+            <router-link id="punyshort" to="/project/punyshort">
                 <h3>Punyshort.ga</h3>
                 <h5>A link-shortener</h5>
-            </a>
+            </router-link>
         </div>
 
         <div class="references">
