@@ -20,7 +20,8 @@ export default {
                 "github": "interaapps/pastefy",
                 "readme": "There is no README file",
                 "buttons": {
-                    "Source-Code": "https://github.com/interaapps/pastefy"
+                    "Source-Code": "https://github.com/interaapps/pastefy",
+                    "Visit the Website": "https://pastefy.ga"
                 },
                 "screenshots": [
                     require("@/assets/images/references/pastefy.png"),
@@ -32,10 +33,24 @@ export default {
                 "github": "interaapps/punyshort",
                 "readme": "There is no README file",
                 "buttons": {
-                    "Source-Code": "https://github.com/interaapps/punyshort"
+                    "Source-Code": "https://github.com/interaapps/punyshort",
+                    "Visit the Website": "https://punyshort.ga"
                 },
                 "screenshots": [
                     require("@/assets/images/references/punyshort.png")
+                ]
+            },
+            "quotysco": {
+                "name": "Quotysco",
+                "github": "interaapps/quotysco",
+                "readme": "There is no README file",
+                "buttons": {
+                    "Source-Code": "https://github.com/interaapps/quotysco",
+                    "Visit the Website": "https://quotysco.ga"
+                },
+                "screenshots": [
+                    require("@/assets/images/screenshots/quotysco/screenshot.png"),
+                    require("@/assets/images/screenshots/quotysco/screenshot-2.png")
                 ]
             }
         },
@@ -63,11 +78,16 @@ export default {
 </script>
 <style lang="scss">
 
+    .project-button {
+        margin-right: 10px;;
+    }
+
     #screenshots {
         margin: auto;
         text-align: center;
         margin-top: 60px;
         margin-bottom: 100px;
+        width: 100%;
     
         img {
             max-width: 100%;
@@ -79,6 +99,11 @@ export default {
     }
 
     #readme {
+
+        pre {
+            overflow: auto;
+        }
+
         p {
             font-size: 20px;
         }
@@ -93,7 +118,15 @@ export default {
             margin-bottom: 14px;
             margin-top: 20px;
         }
+    }
 
-
+    @media screen and (max-width: 720px) {
+        #screenshots {
+            img {
+                width: 90%;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 1px;
+                display: block;
+            }
+        }
     }
 </style>
