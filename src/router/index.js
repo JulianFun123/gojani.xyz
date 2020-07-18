@@ -19,6 +19,11 @@ Vue.use(VueRouter)
     path: '/project/:name',
     name: 'Project',
     component: () => import('../views/Project.vue')
+  },
+  {
+    path: '*',
+    name: 'Not Found',
+    component: () => import('../views/NotFound.vue')
   }
 ]
 
