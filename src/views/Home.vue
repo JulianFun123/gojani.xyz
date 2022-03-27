@@ -3,7 +3,6 @@
     <div class="contents">
         <h1 id="title">Julian Gojani</h1>
         <p style="text-align: center; margin-bottom: 240px">
-            I'm Julian. I love to program in Java, JS and PHP.
         </p>
 
         <h1 class="page-titles">What I've done</h1>
@@ -17,6 +16,17 @@
             <router-link id="punyshort" to="/project/punyshort">
                 <h3>Punyshort.ga</h3>
                 <h5>A link-shortener</h5>
+            </router-link>
+        </div>
+        <div class="references">
+            <router-link id="quotysco" to="/project/quotysco">
+                <h3>Quotysco.eu</h3>
+                <h5>A blogging platform</h5>
+            </router-link>
+
+            <router-link id="passwords" to="/project/passwords">
+                <h3>InteraApps Passwords</h3>
+                <h5>A password manager</h5>
             </router-link>
         </div>
 
@@ -49,6 +59,7 @@ export default {
 
     .references {
         display: flex;
+        transition: 0.3;
 
         #punyshort {
           background-image: linear-gradient(#00000022, #00000022), url(../assets/images/references/punyshort.png); color: #FFFFFF
@@ -58,18 +69,22 @@ export default {
           background-image: url(../assets/images/references/pastefy.png); color: #FFFFFF
         }
 
+        #quotysco {
+          background-image: url( ../assets/images/screenshots/quotysco/screenshot.png); color: #181818
+        }
+
+        #passwords {
+          background-image: linear-gradient(#00000008, #00000008), url( ../assets/images/screenshots/passwords/screenshot.png); color: #181818
+        }
+
         #interaapps {
-          box-shadow: rgba(0, 0, 0, 0.22) 0px 2px 4px 0px;
           background-image: url(../assets/images/references/interaapps.svg);
           color: #434343
         }
     }
 
-    .references a:hover {
-        box-shadow: rgba(0, 0, 0, 0.30) 0px 2px 5px 0px;
-    }
-
     .references a {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px 0px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -80,7 +95,13 @@ export default {
         padding: 40px 0px;
         display: block;
         margin-bottom: 20px;
+        transition: 0.3s;
     }
+
+    .references a:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px 0px;
+    }
+
 
     .references a:hover {
         text-decoration: none !important;

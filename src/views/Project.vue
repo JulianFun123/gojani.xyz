@@ -46,11 +46,24 @@ export default {
                 "readme": "There is no README file",
                 "buttons": {
                     "Source-Code": "https://github.com/interaapps/quotysco",
-                    "Visit the Website": "https://quotysco.ga"
+                    "Visit the Website": "https://quotysco.eu"
                 },
                 "screenshots": [
                     require("@/assets/images/screenshots/quotysco/screenshot.png"),
                     require("@/assets/images/screenshots/quotysco/screenshot-2.png")
+                ]
+            },
+            "passwords": {
+                "name": "InteraApps Passwords",
+                "github": "interaapps/passwords-frontend",
+                "readme": "There is no README file",
+                "buttons": {
+                    "Source-Code": "https://github.com/interaapps/passwords-frontend",
+                    "Visit the Website": "https://passwords.interaapps.de/"
+                },
+                "screenshots": [
+                    require("@/assets/images/screenshots/passwords/screenshot.png"),
+                    require("@/assets/images/screenshots/passwords/screenshot-2.png")
                 ]
             }
         },
@@ -94,7 +107,7 @@ export default {
             border-radius: 10px;
             width: 630px;
             margin: 3px 20px;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 1px;
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 14px 1px;
         }
     }
 

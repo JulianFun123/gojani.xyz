@@ -1,12 +1,20 @@
+@import url(https://fonts.intera.dev/_/sora);
+
 * {
     padding: 0px;
     margin: 0px;
-    font-family: "Inter", sans-serif;
+    font-family: "sora", sans-serif;
+    box-sizing: border-box;
 }
 
 html {
     overflow-y: scroll;
-    color: #424242;
+    color: rgb(0, 0, 0);
+}
+
+html, body {
+    min-height: 100%;
+    background: #ffffff;
 }
 
 h1 {
@@ -32,14 +40,14 @@ p {
 a[href],
 a[href]:link,
 a[href]:visited {
-    color: #ff285e;
+    color: #229755;
     text-decoration: none;
     transition: color 0.3s, text-decoration 0.3s;
 }
 
 a[href]:hover {
-    text-decoration: underline #ff285e;
-    color: #322;
+    text-decoration: underline #1c7a45;
+    color: #1c7a45;
 }
 
 .page-titles {
@@ -52,7 +60,7 @@ a[href]:hover {
 
 .contents {
     box-sizing: border-box;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0px auto;
     padding: 0px 20px;
 }
@@ -63,9 +71,9 @@ a[href]:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff285e;
+    background: #1c7a45;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #d81546;
+    background: #176639;
 }
